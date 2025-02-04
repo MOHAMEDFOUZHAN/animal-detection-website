@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Smart Wildlife Detection</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">SMART WILDLIFE DETECTION</h1>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="alerts.html">Alerts</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Settings Section -->
+    <div class="settings-container">
+        <h2>System Settings</h2>
+
+        <form class="settings-form">
+            <div class="setting-item">
+                <label for="notification-toggle">Enable Notifications:</label>
+                <input type="checkbox" id="notification-toggle" name="notification-toggle" checked>
+            </div>
+
+            <div class="setting-item">
+                <label for="animal-detection">Enable Animal Detection:</label>
+                <input type="checkbox" id="animal-detection" name="animal-detection" checked>
+            </div>
+
+            <div class="setting-item">
+                <label for="location-updates">Enable Location Updates:</label>
+                <input type="checkbox" id="location-updates" name="location-updates">
+            </div>
+
+            <div class="setting-item">
+                <label for="alert-frequency">Alert Frequency:</label>
+                <select id="alert-frequency" name="alert-frequency">
+                    <option value="instant">Instant</option>
+                    <option value="hourly">Hourly</option>
+                    <option value="daily">Daily</option>
+                </select>
+            </div>
+
+            <button type="submit" class="save-btn">Save Settings</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Smart Wildlife Detection System</p>
+    </footer>
+</body>
+</html>
